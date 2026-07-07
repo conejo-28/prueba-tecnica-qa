@@ -99,21 +99,11 @@ maestro test mobile-tests/ --format junit --output report.xml
 
 ## 5. Capa de API — Diseño (no implementado)
 
-Por restricción de tiempo, la capa de API se documenta como diseño en lugar de implementarse.
-Este es el enfoque que se habría ejecutado:
+Por restricción de tiempo, la capa de API se documenta y se ejcuta la prueba de 200
 
 - **Herramienta:** Postman + **Newman** (CLI) — construcción visual, ejecución por consola y
   reporte HTML, alineado con el requisito de herramientas open-source.
-- **API objetivo:** **Restful-Booker** (`https://restful-booker.herokuapp.com`) — CRUD con
-  autenticación, adecuada para simular autenticación y transacciones.
-- **Casos que se cubrirían:**
-  - `POST /auth` → obtención de token; aserción de status y presencia de `token`.
-  - `POST /booking` → petición mutable con payload JSON dinámico; validación de status,
-    **JSON Schema** de la respuesta, y **SLA < 1.5 s**.
-  - `PUT /booking/{id}` → actualización (auth vía Cookie); validación de status, schema y
-    del cambio aplicado.
-- **Aislamiento de variables:** el token y la `base_url` se manejarían como variables de
-  entorno/colección, no hardcodeadas.
+
 - **Hallazgo documentado:** Restful-Booker devuelve `200` (no `201`) al crear un recurso y
   requiere autenticación vía header `Cookie` en lugar de `Authorization` — desviaciones de la
   convención REST que un test de contrato debería evidenciar.
