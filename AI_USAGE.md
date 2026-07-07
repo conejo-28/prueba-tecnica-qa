@@ -10,13 +10,13 @@
 ## Casos de uso específicos
 
 La IA se utilizó como **acelerador de aprendizaje y resolución de problemas**, no como
-generador ciego de código. Dado que esta era mi primera experiencia con automatización móvil,
+generador ciego de código. Dado que esta era mi primera experiencia con automatización móvil, pero con
+conceptos de automatización en android VR, consola de juegos basadas en Linux.
 el asistente cumplió el rol de un ingeniero senior guiando la construcción paso a paso:
 
 - **Configuración autónoma del entorno:** diagnóstico de la conexión adb con el dispositivo
-  físico (el S24 Ultra no aparecía en `adb devices`; se identificó que la depuración USB y el
-  Auto Blocker de Samsung eran las causas), selección de la versión correcta de Java (17 LTS,
-  por incompatibilidad de Maestro con versiones nuevas), e instalación de Maestro Studio.
+  físico, instalacion de JDK 17, maestro, realizadas por mi guaido por el asistente IA para optimizar
+  tiempos
 - **Diseño de selectores estables:** entender la diferencia entre un selector frágil (por
   texto/contenido) y uno estable (por `id`/accesibilidad), y aplicarlo con el inspector de
   Maestro Studio.
@@ -43,7 +43,7 @@ selector — distinción importante para el análisis técnico.
 ## Reflexión técnica
 
 **Impacto en velocidad y calidad:** la IA aceleró significativamente la curva de aprendizaje en
-un dominio nuevo (automatización móvil), reduciendo horas de documentación a minutos de
+un dominio semi nuevo (automatización móvil), reduciendo horas de documentación a minutos de
 diálogo dirigido. Sin embargo, el valor real no estuvo en generar código, sino en **forzar el
 razonamiento**: el asistente insistió repetidamente en verificar en lugar de asumir, y en
 entender el *porqué* de cada decisión antes de ejecutarla.
