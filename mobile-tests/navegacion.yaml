@@ -1,0 +1,15 @@
+appId: com.saucelabs.mydemoapp.android
+---
+- launchApp:
+    clearState: true
+
+- tapOn: "No volver a mostrar"
+
+- tapOn:
+    text: "Product Image"
+    index: 3
+
+- assertVisible: "Add to cart"     
+- tapOn: "Add to cart"
+- tapOn: "Displays number of items in your cart"
+- assertVisible: "Sauce Labs Backpack (red)"  

@@ -1,0 +1,70 @@
+appId: com.saucelabs.mydemoapp.android
+---
+- launchApp:
+    clearState: false
+
+- tapOn:
+    text: "Product Image"
+    index: 3
+
+- tapOn:
+    id: "start5IV"
+
+- tapOn: "Continue"
+
+- tapOn: "Add to cart"
+
+- tapOn:
+    text: "Displays number of items in your cart"
+    index: 1
+
+
+- tapOn: "Proceed To Checkout"
+
+# login ----------------------
+- tapOn:
+    id: "nameET"
+- inputText: "bod@example.com"
+
+- tapOn:
+    id: "passwordET"
+- inputText: "10203040"
+
+- hideKeyboard 
+
+- tapOn:
+    text: "Login"
+    index: 1
+# fin login --------------------
+
+
+- tapOn: "Rebecca Winter"
+- inputText: "bod"
+
+- tapOn: "Mandorley 112"
+- inputText: "organge ville 114"
+
+- hideKeyboard 
+
+- tapOn: "Truro"
+- inputText: "Houston"
+
+- hideKeyboard 
+
+- tapOn: "89750"
+- inputText: "154632"
+
+- hideKeyboard 
+
+- tapOn: "United Kingdom"
+- inputText: "United States"
+
+- hideKeyboard 
+
+
+- tapOn: "To Payment"
+
+
+
+
+

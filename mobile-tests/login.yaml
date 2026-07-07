@@ -1,0 +1,27 @@
+appId: com.saucelabs.mydemoapp.android
+---
+- launchApp:
+    clearState: true
+
+- tapOn: "No volver a mostrar"
+
+- tapOn: "View menu"
+- tapOn: "Log In"
+
+- tapOn:
+    id: "nameET"
+- inputText: "bod@example.com"
+
+- tapOn:
+    id: "passwordET"
+- inputText: "10203040"
+
+- hideKeyboard 
+
+- tapOn:
+    text: "Login"
+    index: 1
+
+- tapOn: "View menu"
+- assertVisible: "Log Out"
+
